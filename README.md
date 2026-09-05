@@ -28,5 +28,5 @@
 
 ## Installing servces
 
-1. Run the 
+Clone this repo onto the target machine and run the install scripts in the **Installers** directory to install and configure each service.
  
