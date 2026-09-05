@@ -28,5 +28,5 @@
 
 ## Installing servces
 
-WIP...
+1. Run the 
  
