@@ -28,5 +28,7 @@
 
 ## Installing servces
 
-Clone this repo onto the target machine and run the install scripts in the **Installers** directory to install and configure each service.
+1. First, run `df -h` and `fdisk -l` to check whether the filesystem's logic volumes are using the full disk or not. If not, run `sudo lvextend -l +100%FREE -r /dev/mapper/ubuntu--vg-ubuntu--lv` to claim all remaining free space on teh drive (double check that `/dev/mapper/ubuntu--vg-ubuntu--lv` is the correct volume to expand, should be the largest filesystem entry listed in `df -h`.
+
+2. Clone this repo onto the target machine and run the install scripts in the **Installers** directory to install and configure each service.
  
